@@ -13,6 +13,7 @@ db.authenticate()
     .catch((err) => { console.log(err) });
 
 //Body parser
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //Set Static
